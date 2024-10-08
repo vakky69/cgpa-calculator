@@ -3,7 +3,7 @@ function calculateCGPA() {
     let cgpa;
 
     if (percentage >= 0 && percentage <= 100) {
-        cgpa = (percentage / 10).toFixed(2);
+        cgpa = (percentage / 9).toFixed(2);
         document.getElementById('result').innerText = `Your CGPA is: ${cgpa}`;
     } else {
         document.getElementById('result').innerText = 'Please enter a valid percentage (0-100).';
@@ -15,7 +15,7 @@ function calculatePercentage() {
     let percentage;
 
     if (cgpa >= 0 && cgpa <= 10) {
-        percentage = (cgpa * 10).toFixed(2);
+        percentage = (cgpa * 9).toFixed(2);
         document.getElementById('result').innerText = `Your Percentage is: ${percentage}%`;
     } else {
         document.getElementById('result').innerText = 'Please enter a valid CGPA (0-10).';
