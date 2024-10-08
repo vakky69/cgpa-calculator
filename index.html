@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Predictor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CGPA Predictor</h1>
+        <div class="form-group">
+            <label for="percentage">Enter Percentage:</label>
+            <input type="number" id="percentage" placeholder="Enter your percentage" />
+            <button onclick="calculateCGPA()">Calculate CGPA</button>
+        </div>
+        <div class="form-group">
+            <label for="cgpa">Enter CGPA:</label>
+            <input type="number" step="0.01" id="cgpa" placeholder="Enter your CGPA" />
+            <button onclick="calculatePercentage()">Calculate Percentage</button>
+        </div>
+        <div class="result" id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
